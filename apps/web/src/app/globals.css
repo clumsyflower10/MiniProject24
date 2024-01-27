@@ -69,6 +69,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  text-decoration: none;
 }
 
 .dropdown-content {
@@ -96,6 +97,12 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.navbar-buttons button a,
+.dropbtn a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color from parent element */
 }
 
 /* Responsive Styles for Mobile */
@@ -472,6 +479,7 @@ button[type='submit'] {
   color: white;
   cursor: pointer;
   font-size: 16px;
+  text-decoration: none;
 }
 
 button[type='submit']:hover {
