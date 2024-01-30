@@ -14,7 +14,7 @@ const Homepage: React.FC = () => {
           </p>
         </div>
         <div className="category-card">
-          <h3 className="category-title">Health</h3>
+          <h3 className="category-title">Wellness</h3>
           <p className="category-description">
             Find wellness workshops, classes, and retreats.
           </p>

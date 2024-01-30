@@ -24,12 +24,27 @@ export const Header = () => {
             <Link href="/eventtypes">Event Types</Link>
           </button>
           <div className="dropdown-content">
-            <button>Music</button>
-            <button>Food & Drinks</button>
-            <button>Arts</button>
-            <button>Charity</button>
-            <button>Festivals</button>
-            <button>Retails</button>
+            <button>
+              <Link href="/music"> Music</Link>
+            </button>
+            <button>
+              <Link href="/fooddrink">Food & Drink</Link>
+            </button>
+            <button>
+              <Link href="/arts">Arts</Link>
+            </button>
+            <button>
+              <Link href="/charity">Charity</Link>
+            </button>
+            <button>
+              <Link href="/festivals">Festivals</Link>
+            </button>
+            <button>
+              <Link href="/retails">Retails</Link>
+            </button>
+            <button>
+              <Link href="/wellness">Wellness</Link>
+            </button>
           </div>
         </div>
         <button>
