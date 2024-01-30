@@ -21,7 +21,7 @@ const EventSearchComponent = () => {
         <form onSubmit={handleSearchSubmit}>
           <input
             type="text"
-            placeholder="Search for locations and events"
+            placeholder="type locations or events here"
             value={searchTerm}
             onChange={handleSearchChange}
             className={styles.searchInput}

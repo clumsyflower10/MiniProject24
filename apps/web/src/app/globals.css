@@ -174,7 +174,7 @@ body {
 }
 
 .search-bar {
-  width: 80%;
+  width: 60%;
   padding: 12px 20px;
   margin: 20px 0;
   box-sizing: border-box;
@@ -445,6 +445,15 @@ details:not([open]) .faq-question::after {
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 110px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
 }
 
 .login-container h1 {
@@ -494,6 +503,8 @@ button[type='submit']:hover {
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 110px;
+  margin-bottom: 60px;
 }
 
 .signup-form-container h1 {
@@ -536,4 +547,241 @@ button[type='submit']:hover {
 
 .collectmoments {
   color: orange;
+}
+
+@media (max-width: 768px) {
+  .signup-form-container {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+}
+
+.eventCreationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+.eventTextSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.eventButtonSection {
+  height: 85px;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventButtonBox {
+  width: 200px; /* Adjust the width as needed */
+  padding: 20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.eventCreateButton {
+  height: 80px;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.eventCreateButton:hover {
+  background-color: grey;
+}
+
+@media (max-width: 768px) {
+  .eventButtonSection {
+    margin-right: 10%;
+  }
+}
+
+.slideContainer {
+  max-width: 1400px;
+  height: 450px;
+  width: 100%;
+  margin: auto;
+  padding: 64px 16px; /* py-16 px-4 */
+  position: relative;
+  background-color: rgb(39, 3, 86);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .slideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+}
+
+.slideTitle {
+  font-size: 2rem; /* text-4xl */
+  padding-bottom: 16px; /* pb-4 */
+  font-weight: bold;
+  color: orange;
+}
+
+.slideImage {
+  width: 450px;
+  height: 550px;
+  border-radius: 32px; /* rounded-2xl */
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.5s; /* duration-500 */
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 8px; /* p-2 */
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.leftArrow {
+  left: 20px;
+}
+
+.rightArrow {
+  right: 20px;
+}
+
+/*eventdisplay
+.ed-background {
+  background-color: rgb(39, 3, 86); 
+  padding: 20px 0; 
+}
+
+.ed-container {
+  max-width: 1200px; 
+  margin: auto; 
+  padding: 20px; 
+  text-align: center; 
+}
+
+.ed-title-container {
+  margin-bottom: 30px; 
+}
+
+.ed-title {
+  font-size: 2rem; 
+  color: orange; 
+  font-weight: bold; 
+}
+
+.ed-grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); 
+  gap: 20px; /
+}
+
+.ed-image-card {
+  background: #ffffff; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.ed-service-image {
+  width: 100%; 
+  object-fit: cover; 
+}
+
+.ed-text-container {
+  padding: 15px; 
+}
+
+.ed-service-text {
+  margin-bottom: 10px; 
+  font-size: 1rem; 
+  color: black; 
+}
+
+*/
+.eventDisplayParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will make the parent container take the full viewport height */
+}
+
+.eventDisplayContainer {
+  height: 600px;
+  width: 450px;
+  margin: auto;
+  padding: 64px 16px; /* py-16 px-4 */
+  position: relative;
+  background-color: rgb(39, 3, 86);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventSlideImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.eventDetails {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.eventArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+.rightArrow {
+  right: 10px;
 }

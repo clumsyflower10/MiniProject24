@@ -1,4 +1,5 @@
 'use client';
+import axios from 'axios';
 
 import React, { useState } from 'react';
 
@@ -12,6 +13,20 @@ const Login = () => {
 
     console.log('Login Attempt with:', username, password);
     // Add authentication logic here
+    axios({
+      method: 'post',
+      url: 'http://localhost:8000/api/auth/login',
+      data: {
+        username: username,
+        password: password,
+      },
+    })
+      .then(function (response) {
+        console.log('Success: ', response);
+      })
+      .catch(function (error) {
+        console.log('Error: ', error);
+      });
   };
 
   return (

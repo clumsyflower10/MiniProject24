@@ -1,10 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../assets/logo.png';
 
 export const Header = () => {
   return (
     <div className="navbar">
-      <div className="navbar-brand">eventLive</div>
+      <Link href="/">
+        <Image
+          src={Logo}
+          width={80}
+          height={40}
+          alt="logo"
+          className="logo-image"
+        />
+      </Link>
       <div className="navbar-buttons">
         <button>
           <Link href="/findevents">Find Events</Link>

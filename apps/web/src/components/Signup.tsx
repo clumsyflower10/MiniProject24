@@ -1,4 +1,5 @@
 'use client';
+import axios from 'axios';
 
 import React, { useState } from 'react';
 
@@ -10,7 +11,22 @@ const SignUp = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log('Sign Up with:', name, email, password);
-    // Add sign-up logic here (e.g., API call to backend)
+    // Add sign-up logic here
+    axios({
+      method: 'post',
+      url: 'http:??localhost:8000/api/auth/register',
+      data: {
+        username: name,
+        email: email,
+        password: password,
+      },
+    })
+      .then(function (response) {
+        console.log('Success: ', response);
+      })
+      .catch(function (error) {
+        console.log('Error: ', error);
+      });
   };
 
   return (
