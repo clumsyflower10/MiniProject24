@@ -445,8 +445,8 @@ details:not([open]) .faq-question::after {
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 110px;
-  margin-bottom: 60px;
+  margin-top: 165px;
+  margin-bottom: 90px;
 }
 
 @media (max-width: 768px) {
@@ -503,7 +503,7 @@ button[type='submit']:hover {
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 110px;
+  margin-top: 140px;
   margin-bottom: 60px;
 }
 
@@ -784,4 +784,95 @@ button[type='submit']:hover {
 
 .rightArrow {
   right: 10px;
+}
+
+/*contact form*/
+.contact-section-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(39, 3, 86);
+  padding: 1rem;
+  color: white;
+}
+
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
+.contact-title-wrapper {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+}
+
+.contact-sub-title {
+  padding-top: 0.5rem;
+  padding-left: 0.25rem;
+  font-weight: bold;
+  color: orang;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
+}
+
+.contact-input {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0.375rem;
+  color: white;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.contact-input-email {
+  margin-top: 1rem;
+}
+
+.contact-textarea {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0.375rem;
+  color: white;
+  margin-bottom: 1rem;
+  height: 160px; /* Adjusted to approximate 10 rows */
+}
+
+.contact-submit-btn {
+  color: black;
+  font-weight: bold;
+  background-color: orange;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  align-self: center;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: transform 300ms ease-in-out;
+}
+
+.contact-submit-btn:hover {
+  transform: scale(1.1);
 }

@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Make sure to install react-icons package
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+// Make sure to install react-icons package
+import '../app/globals.css';
 
 export const Footer = () => {
   return (
@@ -9,19 +11,16 @@ export const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Events</a>
+              <a href="/findevents">Events</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/">About</a>
             </li>
             <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Support</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>

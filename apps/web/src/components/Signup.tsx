@@ -23,6 +23,10 @@ const SignUp = () => {
     })
       .then(function (response) {
         console.log('Success: ', response);
+        // Clear form fields on success
+        setName('');
+        setEmail('');
+        setPassword('');
       })
       .catch(function (error) {
         console.log('Error: ', error);

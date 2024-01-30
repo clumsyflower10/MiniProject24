@@ -23,6 +23,9 @@ const Login = () => {
     })
       .then(function (response) {
         console.log('Success: ', response);
+        // Clear form fields on success
+        setUsername('');
+        setPassword('');
       })
       .catch(function (error) {
         console.log('Error: ', error);

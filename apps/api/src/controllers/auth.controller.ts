@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import prisma from '@/prisma';
+import prisma from '../prisma';
 import { compare, hash } from '../common/helpers/bcrypt.helper';
 import { generateToken } from '../common/helpers/jwt.helper';
 
