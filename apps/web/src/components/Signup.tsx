@@ -1,6 +1,6 @@
 'use client';
 import axios from 'axios';
-
+//import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 
 const SignUp = () => {
@@ -9,12 +9,13 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    //const navigate = useNavigate();
     event.preventDefault();
     console.log('Sign Up with:', name, email, password);
     // Add sign-up logic here
     axios({
       method: 'post',
-      url: 'http:??localhost:8000/api/auth/register',
+      url: 'http://localhost:8000/api/auth/register',
       data: {
         username: name,
         email: email,
@@ -27,6 +28,8 @@ const SignUp = () => {
         setName('');
         setEmail('');
         setPassword('');
+        // navigate('/login');
+        // <Redirect to={{ pathname: '/login' }} />;
       })
       .catch(function (error) {
         console.log('Error: ', error);
