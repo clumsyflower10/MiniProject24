@@ -205,7 +205,18 @@ body {
 .category-title {
   font-size: 20px;
   margin-bottom: 10px;
-  color: orange;
+  color: white;
+  background-color: orange;
+}
+
+.category-title:hover {
+  background-color: grey;
+  box-shadow: 0 15px 18px rgba(0, 0, 0, 0.2);
+}
+
+.no-border {
+  padding: 5px 10px;
+  border: none;
 }
 
 .category-description {
@@ -676,61 +687,6 @@ button[type='submit']:hover {
   right: 20px;
 }
 
-/*eventdisplay
-.ed-background {
-  background-color: rgb(39, 3, 86); 
-  padding: 20px 0; 
-}
-
-.ed-container {
-  max-width: 1200px; 
-  margin: auto; 
-  padding: 20px; 
-  text-align: center; 
-}
-
-.ed-title-container {
-  margin-bottom: 30px; 
-}
-
-.ed-title {
-  font-size: 2rem; 
-  color: orange; 
-  font-weight: bold; 
-}
-
-.ed-grid-container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); 
-  gap: 20px; /
-}
-
-.ed-image-card {
-  background: #ffffff; 
-  border-radius: 10px; 
-  overflow: hidden; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.ed-service-image {
-  width: 100%; 
-  object-fit: cover; 
-}
-
-.ed-text-container {
-  padding: 15px; 
-}
-
-.ed-service-text {
-  margin-bottom: 10px; 
-  font-size: 1rem; 
-  color: black; 
-}
-
-*/
 .eventDisplayParent {
   display: flex;
   justify-content: center;
